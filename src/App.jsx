@@ -5,7 +5,7 @@ import {
   Play, MessageSquare, 
   ArrowRight, Star, 
   BarChart3, TrendingUp, Wrench, Hammer, HardHat, Activity, Smile, Frown,
-  Menu, X, Mail, User, Building, Send, ShieldAlert, Award, Eye, Lock, LogOut, Database
+  Menu, X, Mail, User, Building, Send, ShieldAlert, Award, Eye, Lock, LogOut, Database, Utensils
 } from 'lucide-react';
 import { db, collection, addDoc, getDocs, query, orderBy } from './firebase';
 
@@ -350,15 +350,15 @@ const WhyVoiceSection = () => (
   </section>
 );
 
-// --- Built For Local Trades Section ---
+// --- Built For Local Businesses Section ---
 const BuiltForSection = () => (
   <section className="py-8 sm:py-10 bg-brand-900 z-20 relative border-b border-brand-800">
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="bento-card p-6 sm:p-8 lg:p-12 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-10">
         <div className="lg:w-1/3">
-          <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-2 sm:mb-3">Built for Local Trades</h3>
+          <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-2 sm:mb-3">Built for Local Businesses</h3>
           <p className="text-slate-400 text-sm leading-relaxed">
-            We skipped the enterprise bloat. EchoLoop 360 is a surgical intelligence tool built exclusively for the realities of local home services.
+            We skipped the enterprise bloat. EchoLoop 360 is a surgical intelligence tool built exclusively for local service and hospitality businesses.
           </p>
         </div>
         <div className="lg:w-2/3 flex flex-wrap gap-2 sm:gap-3">
@@ -367,7 +367,8 @@ const BuiltForSection = () => (
             { name: 'Electrical Contractors', icon: <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-500" /> },
             { name: 'General Builders', icon: <Hammer className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-500" /> },
             { name: 'Roofing', icon: <HardHat className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-500" /> },
-            { name: 'HVAC Specialists', icon: <Activity className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-500" /> }
+            { name: 'HVAC Specialists', icon: <Activity className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-500" /> },
+            { name: 'Restaurants & Hospitality', icon: <Utensils className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-500" /> }
           ].map((trade) => (
             <div key={trade.name} className="px-3 sm:px-5 py-2 sm:py-2.5 bg-brand-900 text-slate-300 rounded-full font-medium text-[12px] sm:text-[14px] border border-brand-700 flex items-center gap-1.5 sm:gap-2 shadow-sm hover:border-brand-500 transition-colors cursor-default">
               {trade.icon} {trade.name}
