@@ -123,7 +123,7 @@ const SideMenu = ({ isOpen, closeMenu, setView, currentView }) => {
           <button onClick={() => handleNav('roi')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Business ROI</button>
           <button onClick={() => handleNav('founder')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Premium Customer Program</button>
           <button onClick={() => handleNav('pricing')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Pricing</button>
-          <button onClick={() => handleNav('demo')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Watch Demo</button>
+          <button onClick={() => handleNav('contact')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Watch Demo</button>
         </div>
         
         <div className="p-5 sm:p-6 border-t border-brand-700 shrink-0">
@@ -198,7 +198,7 @@ const LandingHero = ({ setView }) => (
           Join EchoLoop 360
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </button>
-        <button onClick={() => setView('demo')} className="w-full sm:w-auto flex items-center justify-center bg-brand-800 border border-brand-700 text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-medium text-[14px] sm:text-[15px] hover:bg-brand-700 transition-all shadow-sm gap-2">
+        <button onClick={() => setView('contact')} className="w-full sm:w-auto flex items-center justify-center bg-brand-800 border border-brand-700 text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-medium text-[14px] sm:text-[15px] hover:bg-brand-700 transition-all shadow-sm gap-2">
           <Play className="w-4 h-4 text-brand-400" fill="currentColor" /> Book a Demo
         </button>
       </div>
@@ -863,7 +863,7 @@ const FinalCtaSection = ({ setView }) => (
         <button onClick={() => setView('signup')} className="w-full sm:w-auto bg-brand-400 text-brand-900 px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-xl shadow-brand-400/20 text-sm sm:text-base flex items-center justify-center gap-2">
           Join EchoLoop 360
         </button>
-        <button onClick={() => setView('demo')} className="w-full sm:w-auto flex items-center justify-center bg-brand-800 border border-brand-700 text-white px-8 py-4 rounded-full font-medium hover:bg-brand-700 transition-all shadow-sm gap-2 text-sm sm:text-base">
+        <button onClick={() => setView('contact')} className="w-full sm:w-auto flex items-center justify-center bg-brand-800 border border-brand-700 text-white px-8 py-4 rounded-full font-medium hover:bg-brand-700 transition-all shadow-sm gap-2 text-sm sm:text-base">
           Book a Demo
         </button>
       </div>
