@@ -63,7 +63,7 @@ function NavigationBar({ setView, currentView, toggleMenu }) {
           <button onClick={() => handleScrollTo('voice')} className="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">Why Voice</button>
           <button onClick={() => handleScrollTo('workflow')} className="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">How It Works</button>
           <button onClick={() => handleScrollTo('roi')} className="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">Business ROI</button>
-          <button onClick={() => handleScrollTo('founder')} className="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">Founder Program</button>
+          <button onClick={() => handleScrollTo('founder')} className="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">Premium Customer Program</button>
           <button onClick={() => handleScrollTo('pricing')} className="text-sm font-medium text-slate-300 hover:text-brand-400 transition-colors">Pricing</button>
         </div>
         
@@ -121,7 +121,7 @@ const SideMenu = ({ isOpen, closeMenu, setView, currentView }) => {
           <button onClick={() => handleNav('voice')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Why Voice</button>
           <button onClick={() => handleNav('workflow')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">How It Works</button>
           <button onClick={() => handleNav('roi')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Business ROI</button>
-          <button onClick={() => handleNav('founder')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Founder Program</button>
+          <button onClick={() => handleNav('founder')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Premium Customer Program</button>
           <button onClick={() => handleNav('pricing')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Pricing</button>
           <button onClick={() => handleNav('demo')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Watch Demo</button>
         </div>
@@ -711,15 +711,15 @@ const FounderProgram = ({ setView }) => (
       <div className="bento-card p-8 sm:p-12 bg-gradient-to-br from-brand-900 to-brand-850 border-brand-700/80 relative overflow-hidden">
         {/* Decorative Badge */}
         <div className="absolute top-4 right-4 bg-brand-400 text-brand-900 text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider hidden sm:block">
-          Founding Partner
+          Premium Partner
         </div>
         
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           <div className="lg:col-span-7">
             <h2 className="text-[11px] font-bold text-brand-500 uppercase tracking-[0.2em] mb-3">Early Access</h2>
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tight">Become One of Our Founding Customers</h3>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tight">Become One of Our Premium Customers</h3>
             <p className="text-slate-300 text-sm sm:text-base mb-6 leading-relaxed">
-              We’re inviting a small number of local service businesses to help shape EchoLoop 360 before public launch. Work directly with our product team to customize the tool for your trade.
+              We’re inviting a small number of businesses to join our premium customer program. Work directly with our product team to optimize the tool for your business.
             </p>
             
             <button onClick={() => setView('signup')} className="bg-brand-400 text-brand-900 px-6 sm:px-8 py-3.5 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg shadow-brand-400/20 text-sm sm:text-base flex items-center justify-center gap-2 group w-full sm:w-auto">
@@ -729,16 +729,16 @@ const FounderProgram = ({ setView }) => (
           </div>
           
           <div className="lg:col-span-5 border-t lg:border-t-0 lg:border-l border-brand-700/60 pt-8 lg:pt-0 lg:pl-10">
-            <h4 className="text-xs uppercase tracking-wider text-slate-400 font-bold mb-4">Founders Program Perks:</h4>
+            <h4 className="text-xs uppercase tracking-wider text-slate-400 font-bold mb-4">Premium Customer Program Perks:</h4>
             <ul className="space-y-3 sm:space-y-4">
               {[
-                "Lifetime founder pricing",
+                "Lifetime premium customer pricing",
                 "Direct access to the product team",
                 "Priority support",
                 "Early feature access",
                 "Opportunity to influence the roadmap"
               ].map((perk, i) => (
-                <li key={i} className="flex items-start gap-2 text-xs sm:text-sm text-slate-350">
+                <li key={i} className="flex items-start gap-2 text-xs sm:text-sm text-slate-355">
                   <Award className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                   <span>{perk}</span>
                 </li>
@@ -758,7 +758,7 @@ const PricingSection = ({ setView }) => (
       <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
         <h2 className="text-[11px] sm:text-[12px] font-bold text-brand-500 uppercase tracking-[0.2em] mb-3 sm:mb-4">Disruptive Pricing</h2>
         <h3 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 sm:mb-5 tracking-tight text-white text-balance">Choose your growth engine.</h3>
-        <p className="text-slate-400 text-base sm:text-lg">Founder-only pricing available for our active partners during the launch phase.</p>
+        <p className="text-slate-400 text-base sm:text-lg">Premium customer pricing available for our active partners during the launch phase.</p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
@@ -856,7 +856,7 @@ const FinalCtaSection = ({ setView }) => (
         Ready to Protect Your Reputation Before It Becomes Public?
       </h2>
       <p className="text-slate-450 text-base sm:text-lg mb-8 max-w-2xl mx-auto font-medium">
-        Join our early partner program and help shape the future of AI-powered reputation management. Lock in lifetime founder pricing.
+        Join our early partner program and help shape the future of AI-powered reputation management. Lock in lifetime premium pricing.
       </p>
       
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -918,7 +918,7 @@ const BetaSignupView = ({ setView }) => {
             </div>
             <h4 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-white">Application Submitted!</h4>
             <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6 sm:mb-8">
-              Thank you for applying for the EchoLoop 360 Founder Program. Our team will review your details and contact you via email within 24 hours to schedule your onboarding.
+              Thank you for applying for the EchoLoop 360 Premium Customer Program. Our team will review your details and contact you via email within 24 hours to schedule your onboarding.
             </p>
             <button onClick={() => setView('home')} className="bg-brand-900 border border-brand-700 text-white px-6 py-3 rounded-xl hover:bg-brand-850 transition-all font-bold text-sm sm:text-base">
               Return Home
@@ -928,7 +928,7 @@ const BetaSignupView = ({ setView }) => {
           <>
             <div className="text-center mb-6 sm:mb-8">
               <BrandLogo className="w-8 h-8 sm:w-10 sm:h-10 text-brand-400 mx-auto mb-3 sm:mb-4" />
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-2">Join the Founder Program</h2>
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-2">Join the Premium Customer Program</h2>
               <p className="text-slate-455 text-xs sm:text-sm">Only accepting 25 UK & US Home Service Businesses. Apply today.</p>
             </div>
             
@@ -959,7 +959,7 @@ const BetaSignupView = ({ setView }) => {
               </div>
 
               <div>
-                <label className="block text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-1.5 sm:mb-2">Your Home Service Industry</label>
+                <label className="block text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-1.5 sm:mb-2">Your Business Industry</label>
                 <select name="industry" required className="w-full px-4 py-3.5 sm:py-4 rounded-xl border border-brand-700 bg-brand-900 text-white focus:border-brand-500 focus:ring-1 focus:ring-brand-500 outline-none transition-all text-sm sm:text-base">
                   <option value="" disabled selected>Select industry</option>
                   <option value="plumbing">Plumbing & Heating</option>
@@ -967,14 +967,15 @@ const BetaSignupView = ({ setView }) => {
                   <option value="electrical">Electrical Services</option>
                   <option value="roofing">Roofing & Building</option>
                   <option value="pest-control">Pest Control</option>
-                  <option value="other">Other Trade</option>
+                  <option value="restaurant">Restaurants & Hospitality</option>
+                  <option value="other">Other Business / Trade</option>
                 </select>
               </div>
               
               {error && <p className="text-red-400 text-xs font-semibold">{error}</p>}
 
               <button type="submit" disabled={loading} className="w-full bg-brand-400 text-brand-900 font-extrabold py-3.5 sm:py-4 rounded-xl hover:bg-brand-500 transition-colors mt-4 sm:mt-6 shadow-[0_0_20px_rgba(71,241,156,0.2)] text-sm sm:text-base disabled:opacity-50 disabled:cursor-not-allowed">
-                {loading ? 'Submitting Application...' : 'Apply for Founder Spot'}
+                {loading ? 'Submitting Application...' : 'Apply for Premium Customer Spot'}
               </button>
               
               <p className="text-center text-[10px] sm:text-xs text-slate-500 mt-3 sm:mt-4">
@@ -1233,7 +1234,7 @@ const AdminPortalView = () => {
             onClick={() => setActiveTab('beta')} 
             className={`px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition-all ${activeTab === 'beta' ? 'border-brand-400 text-brand-400 font-bold' : 'border-transparent text-slate-400 hover:text-white'}`}
           >
-            Founder Program Applicants ({betaData.length})
+            Premium Customer Applicants ({betaData.length})
           </button>
           <button 
             onClick={() => setActiveTab('demo')} 
