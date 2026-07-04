@@ -1,6 +1,6 @@
-# EchoLoop App
+# EchoLoop 360 App
 
-Minimal single-page application for the EchoLoop project.
+Minimal single-page application for the EchoLoop 360 project.
 
 ## Development
 

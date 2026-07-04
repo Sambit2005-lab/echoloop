@@ -54,7 +54,7 @@ function NavigationBar({ setView, currentView, toggleMenu }) {
           <div className="w-8 h-8 sm:w-9 sm:h-9 bg-brand-800 border border-brand-700 rounded-full flex items-center justify-center shadow-md shrink-0">
             <BrandLogo className="w-4 h-4 sm:w-5 sm:h-5 text-brand-400" />
           </div>
-          <span className="font-bold text-lg sm:text-xl tracking-tight text-white">EchoLoop</span>
+          <span className="font-bold text-lg sm:text-xl tracking-tight text-white">EchoLoop 360</span>
         </div>
         
         {/* Desktop Links */}
@@ -190,12 +190,12 @@ const LandingHero = ({ setView }) => (
       </h1>
       
       <p className="text-base sm:text-lg md:text-xl text-slate-300 mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed font-medium text-balance px-2 sm:px-0">
-        EchoLoop helps local service businesses collect instant voice feedback, identify unhappy customers before they post public reviews, improve technician performance, and automatically grow their online reputation using AI.
+        EchoLoop 360 helps local service businesses collect instant voice feedback, identify unhappy customers before they post public reviews, improve technician performance, and automatically grow their online reputation using AI.
       </p>
       
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12 sm:mb-16 px-4 sm:px-0">
         <button onClick={() => setView('signup')} className="w-full sm:w-auto bg-brand-400 text-brand-900 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-[14px] sm:text-[15px] hover:bg-brand-500 transition-all shadow-[0_8px_20px_rgba(71,241,156,0.2)] flex items-center justify-center gap-2 group">
-          Join EchoLoop
+          Join EchoLoop 360
           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </button>
         <button onClick={() => setView('demo')} className="w-full sm:w-auto flex items-center justify-center bg-brand-800 border border-brand-700 text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-medium text-[14px] sm:text-[15px] hover:bg-brand-700 transition-all shadow-sm gap-2">
@@ -255,7 +255,7 @@ const ProblemSection = () => (
       </div>
 
       <div className="bg-gradient-to-r from-brand-950 to-brand-900 border border-brand-700/50 rounded-[2rem] p-6 sm:p-8 text-center max-w-4xl mx-auto shadow-md">
-        <h4 className="text-xl sm:text-2xl font-bold text-white mb-2">EchoLoop changes that.</h4>
+        <h4 className="text-xl sm:text-2xl font-bold text-white mb-2">EchoLoop 360 changes that.</h4>
         <p className="text-slate-350 text-xs sm:text-sm max-w-2xl mx-auto">
           We build an instant, frictionless voice feedback bridge that captures honest thoughts before customers leave and helps you intercept issues privately.
         </p>
@@ -335,7 +335,7 @@ const WhyVoiceSection = () => (
             </div>
             
             <div className="bg-brand-950 p-4 rounded-xl border border-brand-700/60 shadow-[0_4px_15px_rgba(71,241,156,0.05)]">
-              <span className="text-[10px] uppercase font-bold text-brand-400 block mb-1">EchoLoop AI Voice Analysis</span>
+              <span className="text-[10px] uppercase font-bold text-brand-400 block mb-1">EchoLoop 360 AI Voice Analysis</span>
               <p className="text-sm font-semibold text-white italic">"The service was fine, but the tech left a bit of a mess... there's oil all over the clean carpets..."</p>
               <div className="mt-3 grid grid-cols-2 gap-2 text-[10px]">
                 <div className="bg-brand-900 px-2 py-1 rounded text-red-400 font-bold">Tone: Highly Frustrated</div>
@@ -358,7 +358,7 @@ const BuiltForSection = () => (
         <div className="lg:w-1/3">
           <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-2 sm:mb-3">Built for Local Trades</h3>
           <p className="text-slate-400 text-sm leading-relaxed">
-            We skipped the enterprise bloat. EchoLoop is a surgical intelligence tool built exclusively for the realities of local home services.
+            We skipped the enterprise bloat. EchoLoop 360 is a surgical intelligence tool built exclusively for the realities of local home services.
           </p>
         </div>
         <div className="lg:w-2/3 flex flex-wrap gap-2 sm:gap-3">
@@ -434,7 +434,7 @@ const WorkflowSection = () => (
             </div>
             <div className="md:col-span-8">
               <p className="text-slate-300 text-sm leading-relaxed">
-                EchoLoop’s AI transcript engine parses the voice note, evaluates sentiment, and automatically tags technician names and key topics.
+                EchoLoop 360’s AI transcript engine parses the voice note, evaluates sentiment, and automatically tags technician names and key topics.
                 <strong className="block mt-1.5 text-white">Business Outcome: Spots exact bottlenecks, tracks technician performance leaderboards, and discovers training needs.</strong>
               </p>
             </div>
@@ -678,8 +678,8 @@ const WhyEchoLoop = () => (
   <section className="py-16 sm:py-24 bg-brand-900 border-b border-brand-850">
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="mb-12 sm:mb-16 text-center max-w-3xl mx-auto">
-        <h2 className="text-[11px] sm:text-[12px] font-bold text-brand-500 uppercase tracking-[0.2em] mb-3 sm:mb-4">Why EchoLoop</h2>
-        <h3 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-3 sm:mb-5 tracking-tight text-white">Why Businesses Choose EchoLoop</h3>
+        <h2 className="text-[11px] sm:text-[12px] font-bold text-brand-500 uppercase tracking-[0.2em] mb-3 sm:mb-4">Why EchoLoop 360</h2>
+        <h3 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-3 sm:mb-5 tracking-tight text-white">Why Businesses Choose EchoLoop 360</h3>
         <p className="text-slate-400 text-base sm:text-lg">Designed for local service operators, not desk-bound corporate teams.</p>
       </div>
 
@@ -719,7 +719,7 @@ const FounderProgram = ({ setView }) => (
             <h2 className="text-[11px] font-bold text-brand-500 uppercase tracking-[0.2em] mb-3">Early Access</h2>
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tight">Become One of Our Founding Customers</h3>
             <p className="text-slate-300 text-sm sm:text-base mb-6 leading-relaxed">
-              We’re inviting a small number of local service businesses to help shape EchoLoop before public launch. Work directly with our product team to customize the tool for your trade.
+              We’re inviting a small number of local service businesses to help shape EchoLoop 360 before public launch. Work directly with our product team to customize the tool for your trade.
             </p>
             
             <button onClick={() => setView('signup')} className="bg-brand-400 text-brand-900 px-6 sm:px-8 py-3.5 rounded-full font-bold hover:bg-brand-500 transition-all shadow-lg shadow-brand-400/20 text-sm sm:text-base flex items-center justify-center gap-2 group w-full sm:w-auto">
@@ -861,7 +861,7 @@ const FinalCtaSection = ({ setView }) => (
       
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
         <button onClick={() => setView('signup')} className="w-full sm:w-auto bg-brand-400 text-brand-900 px-8 py-4 rounded-full font-bold hover:bg-brand-500 transition-all shadow-xl shadow-brand-400/20 text-sm sm:text-base flex items-center justify-center gap-2">
-          Join EchoLoop
+          Join EchoLoop 360
         </button>
         <button onClick={() => setView('demo')} className="w-full sm:w-auto flex items-center justify-center bg-brand-800 border border-brand-700 text-white px-8 py-4 rounded-full font-medium hover:bg-brand-700 transition-all shadow-sm gap-2 text-sm sm:text-base">
           Book a Demo
@@ -918,7 +918,7 @@ const BetaSignupView = ({ setView }) => {
             </div>
             <h4 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-white">Application Submitted!</h4>
             <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6 sm:mb-8">
-              Thank you for applying for the EchoLoop Founder Program. Our team will review your details and contact you via email within 24 hours to schedule your onboarding.
+              Thank you for applying for the EchoLoop 360 Founder Program. Our team will review your details and contact you via email within 24 hours to schedule your onboarding.
             </p>
             <button onClick={() => setView('home')} className="bg-brand-900 border border-brand-700 text-white px-6 py-3 rounded-xl hover:bg-brand-850 transition-all font-bold text-sm sm:text-base">
               Return Home
@@ -1042,7 +1042,7 @@ const ContactView = ({ setView }) => {
           <>
             <div className="text-center mb-8 sm:mb-10">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-3 sm:mb-4">Request a Demo</h2>
-              <p className="text-slate-400 text-base sm:text-lg px-2">Tell us about your home service business, and let's explore how EchoLoop can protect your local reputation.</p>
+              <p className="text-slate-400 text-base sm:text-lg px-2">Tell us about your home service business, and let's explore how EchoLoop 360 can protect your local reputation.</p>
             </div>
             
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
@@ -1126,9 +1126,9 @@ const LegalView = ({ title, setView }) => {
         <div className="prose prose-invert prose-slate max-w-none text-slate-300 space-y-4 sm:space-y-6 leading-relaxed text-sm sm:text-base">
           <p>Last updated: June 29, 2026</p>
           <h2 className="text-xl sm:text-2xl font-bold text-white mt-6 sm:mt-8 mb-3 sm:mb-4">1. Introduction</h2>
-          <p>This is a placeholder page for the {title}. EchoLoop takes privacy, data sovereignty, and security seriously for local trade service providers.</p>
+          <p>This is a placeholder page for the {title}. EchoLoop 360 takes privacy, data sovereignty, and security seriously for local trade service providers.</p>
           <h2 className="text-xl sm:text-2xl font-bold text-white mt-6 sm:mt-8 mb-3 sm:mb-4">2. Data Processing & GDPR</h2>
-          <p>EchoLoop strictly adheres to the guidelines set by GDPR and local data protection regulations. All voice memos, client logs, and analytics are fully encrypted at rest and in transit.</p>
+          <p>EchoLoop 360 strictly adheres to the guidelines set by GDPR and local data protection regulations. All voice memos, client logs, and analytics are fully encrypted at rest and in transit.</p>
           <h2 className="text-xl sm:text-2xl font-bold text-white mt-6 sm:mt-8 mb-3 sm:mb-4">3. Contact Us</h2>
           <p>For legal inquiries, contact our beta team via the <span onClick={() => setView('contact')} className="text-brand-400 cursor-pointer hover:underline">Request a Demo</span> page.</p>
         </div>
@@ -1334,11 +1334,11 @@ const FooterBlock = ({ setView }) => (
         <div className="w-6 h-6 sm:w-7 sm:h-7 bg-brand-800 border border-brand-700 rounded-md flex items-center justify-center">
           <BrandLogo className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-400" />
         </div>
-        <span className="font-bold text-white text-base sm:text-lg">EchoLoop</span>
+        <span className="font-bold text-white text-base sm:text-lg">EchoLoop 360</span>
       </div>
       
       <div className="flex flex-wrap justify-center gap-3 sm:gap-4 text-[12px] sm:text-[13px] text-slate-500 font-medium">
-        <span>© 2026 EchoLoop</span>
+        <span>© 2026 EchoLoop 360</span>
         <span className="hidden sm:inline">•</span>
         <span>Built for local service businesses in US & UK 🇺🇸 🇬🇧</span>
       </div>
