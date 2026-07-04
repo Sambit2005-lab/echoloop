@@ -123,7 +123,7 @@ const SideMenu = ({ isOpen, closeMenu, setView, currentView }) => {
           <button onClick={() => handleNav('roi')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Business ROI</button>
           <button onClick={() => handleNav('founder')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Premium Customer Program</button>
           <button onClick={() => handleNav('pricing')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Pricing</button>
-          <button onClick={() => handleNav('contact')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Watch Demo</button>
+          <button onClick={() => handleNav('demo')} className="text-left text-lg font-medium text-slate-300 hover:text-brand-400 transition-colors">Watch Demo</button>
         </div>
         
         <div className="p-5 sm:p-6 border-t border-brand-700 shrink-0">
